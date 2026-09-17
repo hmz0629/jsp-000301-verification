@@ -5,6 +5,10 @@ counterexample already recorded in the catalog. It belongs in this existing
 correction discussion rather than a duplicate issue. It does not request a
 new mathematical discovery credit, priority, or an award allocation.
 
+Pinned proof source: [Proof.lean at 9515c591808c64a1bb465f84598ad2cdf5dcfedf](https://github.com/hmz0629/jsp-000301-verification/blob/9515c591808c64a1bb465f84598ad2cdf5dcfedf/Proof.lean).
+
+Recorded checker output: [Lean response log](https://github.com/hmz0629/jsp-000301-verification/blob/9515c591808c64a1bb465f84598ad2cdf5dcfedf/Proof.remote-log.json).
+
 ### Mathematical answer
 
 The answer is **no**. The consecutive positive integers

@@ -1,0 +1,12 @@
+{
+  "status": "submitted",
+  "url": "https://github.com/TheJustinSunPrize/awards/issues/63#issuecomment-5710811941",
+  "comment_id": 5710811941,
+  "account": "hmz0629",
+  "created_at": "2026-09-17T07:41:22Z",
+  "repository": "https://github.com/hmz0629/jsp-000301-verification",
+  "proof_commit": "9515c591808c64a1bb465f84598ad2cdf5dcfedf",
+  "proof_source": "https://github.com/hmz0629/jsp-000301-verification/blob/9515c591808c64a1bb465f84598ad2cdf5dcfedf/Proof.lean",
+  "proof_sha256": "d17f7d4b9ebf8c5317829001bd8bfe1bc5edf512158ea2f08063f27790f50d2f",
+  "kind": "Supplementary verification comment in existing correction issue; not an award nomination."
+}

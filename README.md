@@ -35,10 +35,10 @@ mathematical novelty, first formalization, an independently reviewed award
 nomination, nor entitlement to payment. The existing formalization was consulted
 as public context; this file uses a finite prime-factor certificate proof route.
 
-The supplementary comment is intended for existing correction issue #63,
-avoiding a duplicate issue. Actual publication is established by the public
-discussion and, once posted, `submission-receipt.json`.
-`submission-comment.md` contains the English submission text and proof source.
+The supplementary evidence was [submitted in existing correction issue #63](https://github.com/TheJustinSunPrize/awards/issues/63#issuecomment-5710811941)
+on 2026-09-17 using GitHub account `hmz0629`, avoiding a duplicate issue.
+`submission-receipt.json` records the verified publication URL and pinned proof commit.
+`submission-comment.md` contains the posted English text and proof source.
 
 ## Formal statement
 

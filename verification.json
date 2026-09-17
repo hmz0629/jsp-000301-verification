@@ -16,7 +16,10 @@
   ],
   "local_lake_build_run": false,
   "independent_human_review": false,
-  "publicly_submitted": false,
+  "publicly_submitted": true,
   "intended_submission": "https://github.com/TheJustinSunPrize/awards/issues/63",
-  "status_note": "Prepared supplementary evidence; authenticated GitHub access unavailable."
+  "status_note": "Published as supplementary evidence in existing correction issue #63; not an award nomination.",
+  "submission_url": "https://github.com/TheJustinSunPrize/awards/issues/63#issuecomment-5710811941",
+  "proof_commit": "9515c591808c64a1bb465f84598ad2cdf5dcfedf",
+  "proof_source": "https://github.com/hmz0629/jsp-000301-verification/blob/9515c591808c64a1bb465f84598ad2cdf5dcfedf/Proof.lean"
 }
