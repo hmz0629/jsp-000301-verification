@@ -1,0 +1,1419 @@
+[
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+      "capabilities": {
+        "callHierarchyProvider": true,
+        "codeActionProvider": {
+          "codeActionKinds": [
+            "quickfix",
+            "refactor",
+            "source.organizeImports"
+          ],
+          "resolveProvider": true,
+          "workDoneProgress": false
+        },
+        "colorProvider": {
+          "workDoneProgress": false
+        },
+        "completionProvider": {
+          "resolveProvider": true,
+          "triggerCharacters": [
+            "."
+          ]
+        },
+        "declarationProvider": true,
+        "definitionProvider": true,
+        "documentHighlightProvider": true,
+        "documentSymbolProvider": true,
+        "experimental": {
+          "moduleHierarchyProvider": {},
+          "rpcProvider": {
+            "highlightMatchesProvider": {},
+            "rpcWireFormat": "v1"
+          }
+        },
+        "foldingRangeProvider": true,
+        "hoverProvider": true,
+        "inlayHintProvider": {
+          "resolveProvider": false,
+          "workDoneProgress": false
+        },
+        "referencesProvider": true,
+        "renameProvider": {
+          "prepareProvider": true
+        },
+        "semanticTokensProvider": {
+          "full": true,
+          "legend": {
+            "tokenModifiers": [
+              "declaration",
+              "definition",
+              "readonly",
+              "static",
+              "deprecated",
+              "abstract",
+              "async",
+              "modification",
+              "documentation",
+              "defaultLibrary"
+            ],
+            "tokenTypes": [
+              "keyword",
+              "variable",
+              "property",
+              "function",
+              "namespace",
+              "type",
+              "class",
+              "enum",
+              "interface",
+              "struct",
+              "typeParameter",
+              "parameter",
+              "enumMember",
+              "event",
+              "method",
+              "macro",
+              "modifier",
+              "comment",
+              "string",
+              "number",
+              "regexp",
+              "operator",
+              "decorator",
+              "leanSorryLike"
+            ]
+          },
+          "range": true
+        },
+        "signatureHelpProvider": {
+          "triggerCharacters": [
+            " "
+          ],
+          "workDoneProgress": false
+        },
+        "textDocumentSync": {
+          "change": 2,
+          "openClose": true,
+          "save": {
+            "includeText": true
+          },
+          "willSave": false,
+          "willSaveWaitUntil": false
+        },
+        "typeDefinitionProvider": true,
+        "workspaceSymbolProvider": true
+      },
+      "serverInfo": {
+        "name": "Lean 4 Server",
+        "version": "0.3.0"
+      }
+    }
+  },
+  {
+    "id": "register_lean_watcher",
+    "jsonrpc": "2.0",
+    "method": "client/registerCapability",
+    "params": {
+      "registrations": [
+        {
+          "id": "lean_watcher",
+          "method": "workspace/didChangeWatchedFiles",
+          "registerOptions": {
+            "watchers": [
+              {
+                "globPattern": "**/*.lean"
+              },
+              {
+                "globPattern": "**/*.ilean"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 0
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 0
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "id": 0,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 2,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 3,
+    "jsonrpc": "2.0",
+    "method": "workspace/semanticTokens/refresh"
+  },
+  {
+    "id": 4,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 5,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 6,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 7,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 8,
+    "jsonrpc": "2.0",
+    "method": "workspace/semanticTokens/refresh"
+  },
+  {
+    "id": 9,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 10,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "id": 11,
+    "jsonrpc": "2.0",
+    "method": "workspace/inlayHint/refresh"
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 19,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 50,
+              "line": 18
+            },
+            "start": {
+              "character": 0,
+              "line": 15
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "id": 12,
+    "jsonrpc": "2.0",
+    "method": "workspace/semanticTokens/refresh"
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 50,
+              "line": 18
+            },
+            "start": {
+              "character": 2,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 13
+            },
+            "start": {
+              "character": 0,
+              "line": 13
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 50,
+              "line": 18
+            },
+            "start": {
+              "character": 2,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 50,
+              "line": 18
+            },
+            "start": {
+              "character": 2,
+              "line": 18
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 68,
+              "line": 24
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 17
+            },
+            "start": {
+              "character": 0,
+              "line": 17
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 73,
+              "line": 28
+            },
+            "start": {
+              "character": 2,
+              "line": 28
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 30
+            },
+            "start": {
+              "character": 2,
+              "line": 29
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 32
+            },
+            "start": {
+              "character": 0,
+              "line": 32
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 79,
+              "line": 34
+            },
+            "start": {
+              "character": 2,
+              "line": 34
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 36
+            },
+            "start": {
+              "character": 2,
+              "line": 35
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 40
+            },
+            "start": {
+              "character": 0,
+              "line": 38
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 42
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 20
+            },
+            "start": {
+              "character": 0,
+              "line": 20
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 26
+            },
+            "start": {
+              "character": 0,
+              "line": 26
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 73,
+              "line": 28
+            },
+            "start": {
+              "character": 50,
+              "line": 28
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 30
+            },
+            "start": {
+              "character": 2,
+              "line": 29
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 32
+            },
+            "start": {
+              "character": 0,
+              "line": 32
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 79,
+              "line": 34
+            },
+            "start": {
+              "character": 56,
+              "line": 34
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 36
+            },
+            "start": {
+              "character": 2,
+              "line": 35
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 40
+            },
+            "start": {
+              "character": 0,
+              "line": 38
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 42
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "$/lean/fileProgress",
+    "params": {
+      "processing": [
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 32
+            },
+            "start": {
+              "character": 0,
+              "line": 32
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 79,
+              "line": 34
+            },
+            "start": {
+              "character": 56,
+              "line": 34
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 8,
+              "line": 36
+            },
+            "start": {
+              "character": 2,
+              "line": 35
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 38
+            },
+            "start": {
+              "character": 0,
+              "line": 38
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 42
+            },
+            "start": {
+              "character": 0,
+              "line": 42
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 47
+            },
+            "start": {
+              "character": 0,
+              "line": 47
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 53
+            },
+            "start": {
+              "character": 0,
+              "line": 53
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 38,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          }
+        },
+        {
+          "kind": 1,
+          "range": {
+            "end": {
+              "character": 0,
+              "line": 67
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          }
+        }
+      ],
+      "textDocument": {
+        "uri": "file:///Main.lean",
+        "version": 1
+      }
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "message": "'JSP000301.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "message": "'JSP000301.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "message": "'JSP000301.conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "message": "'JSP000301.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "message": "'JSP000301.conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 5,
+              "line": 65
+            },
+            "start": {
+              "character": 0,
+              "line": 65
+            }
+          },
+          "message": "\"4.34.0\"",
+          "range": {
+            "end": {
+              "character": 5,
+              "line": 65
+            },
+            "start": {
+              "character": 0,
+              "line": 65
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  },
+  {
+    "jsonrpc": "2.0",
+    "method": "textDocument/publishDiagnostics",
+    "params": {
+      "diagnostics": [
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "message": "'JSP000301.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 63
+            },
+            "start": {
+              "character": 0,
+              "line": 63
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "message": "'JSP000301.conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "range": {
+            "end": {
+              "character": 6,
+              "line": 64
+            },
+            "start": {
+              "character": 0,
+              "line": 64
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 5,
+              "line": 65
+            },
+            "start": {
+              "character": 0,
+              "line": 65
+            }
+          },
+          "message": "\"4.34.0\"",
+          "range": {
+            "end": {
+              "character": 5,
+              "line": 65
+            },
+            "start": {
+              "character": 0,
+              "line": 65
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        },
+        {
+          "fullRange": {
+            "end": {
+              "character": 5,
+              "line": 66
+            },
+            "start": {
+              "character": 0,
+              "line": 66
+            }
+          },
+          "message": "\"CHECK_COMPLETE\"",
+          "range": {
+            "end": {
+              "character": 5,
+              "line": 66
+            },
+            "start": {
+              "character": 0,
+              "line": 66
+            }
+          },
+          "severity": 3,
+          "source": "Lean 4"
+        }
+      ],
+      "uri": "file:///Main.lean",
+      "version": 1
+    }
+  }
+]

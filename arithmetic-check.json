@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "consecutive": true,
+  "witnesses": [
+    {
+      "n": 12167,
+      "factors": {
+        "23": 3
+      },
+      "powerful": true,
+      "nonsquare": true,
+      "lower_square": 12100,
+      "upper_square": 12321
+    },
+    {
+      "n": 12168,
+      "factors": {
+        "2": 3,
+        "3": 2,
+        "13": 2
+      },
+      "powerful": true,
+      "nonsquare": true,
+      "lower_square": 12100,
+      "upper_square": 12321
+    }
+  ]
+}

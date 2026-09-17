@@ -1,0 +1,22 @@
+{
+  "problem": "JSP-000301",
+  "checked_on": "2026-09-17",
+  "proof_file": "Proof.lean",
+  "proof_sha256": "d17f7d4b9ebf8c5317829001bd8bfe1bc5edf512158ea2f08063f27790f50d2f",
+  "method": "Remote Lean language-server elaboration and axiom audit",
+  "service": "https://live.lean-lang.org/",
+  "project": "mathlib-stable",
+  "lean_version": "4.34.0",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "errors": 0,
+  "warnings": 0,
+  "axiom_audit": [
+    "'JSP000301.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'JSP000301.conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "local_lake_build_run": false,
+  "independent_human_review": false,
+  "publicly_submitted": false,
+  "intended_submission": "https://github.com/TheJustinSunPrize/awards/issues/63",
+  "status_note": "Prepared supplementary evidence; authenticated GitHub access unavailable."
+}
